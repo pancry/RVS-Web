@@ -30,18 +30,37 @@
 
     <!-- [favicon] begin -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <!-- [favicon] end --> 	
 
     <script type='text/javascript' src='js/jquery/jquery.js'></script>
-
+	<style>
+	.contactus_font_content {
+	    font-size: 14px;
+	    font-family: Verdana;
+	    text-align: left;    
+	}
+	.contactus_font_footer {
+	    font-size: 12px;
+	    font-family: Verdana;
+	    text-align: left; 
+	    color: #0000ff;    
+	}
+	.contactus_font_maillink {
+	    font-size: 14px;
+	    font-family: Verdana;
+	    text-align: left;
+	    color: #0000ff;    
+	}
+	
+	</style>
 </head>
 <!-- END HEAD -->
 
 <!-- START BODY -->
 <body class="home page no_js responsive stretched">
 
-<!-- START BG SHADOW -->
+	<!-- START BG SHADOW -->
 <div class="bg-shadow">
 
 <!-- START WRAPPER -->
@@ -110,7 +129,7 @@
     <div class="breadcrumbs">
         <p id="yit-breadcrumb" itemprop="breadcrumb">
             <a class="home" href="index.html">Home Page</a> &gt;
-            <a class="no-link current" href="#">Contact Us</a>
+            <a class="home" href="#">Contact Us</a>
         </p>
     </div>
 
@@ -122,34 +141,20 @@
     <div class="container group">
         <div class="row">
             <!-- START CONTENT -->
-            <div id="content-page" class="span9 content group">
+            <div id="content-page" class="span12 content group">
                 <div class="page type-page status-publish hentry group">
                     
                     <div class="row">
-		                <div  class="widget span3 contact-info">
-		                    <h3>Get in touch</h3>
-		                    <div class="sidebar-nav">
-		                        <ul>
-		                            <li>
-		                                <i class="icon-map-marker" style="color:#000;font-size:12px;width:12px;height:12px"></i>
-		                                <span>Address:</span> RV Software Pvt Ltd., 122 xxxxxx street, Bangalore, Karnataka
-		                            </li>
-		                            <li>
-		                                <i class="icon-phone" style="color:#000;font-size:12px;width:12px;height:12px"></i>
-		                                <span>Mobile:</span> +91 xxxxx xxxxx
-		                            </li>
-		                            <li>
-		                                <i class="icon-print" style="color:#000;font-size:12px;width:12px;height:12px"></i>
-		                                <span>Fax:</span> +91 xxx xxx xxxx
-		                            </li>
-		                            <li>
-		                                <i class="icon-envelope" style="color:#000;font-size:12px;width:12px;height:12px"></i>
-		                                <span>Email:</span> xxxxxx@rvsoftwares.com
-		                            </li>
-		                        </ul>
-		                    </div>
-		                </div>
-
+		                <div  class="widget span6">
+							<p class="contactus_font_content">&nbsp;</p>
+		                    <h5><b>SALES</b></h5>
+							<p class="contactus_font_content">To know about doing business with R V Softwares, contact our sales team.</p>
+                    		<a href="mailto:sales@rvsoftwares.com" class="contactus_font_maillink">sales@rvsoftwares.com</a>
+							<p class="contactus_font_content">&nbsp;</p>
+		                    <h5><b>SUPPORT</b></h5>
+							<p class="contactus_font_content">We are available 24X7 to support our customers.</p>
+                    		<a href="mailto:sales@rvsoftwares.com" class="contactus_font_maillink">support@rvsoftwares.com</a>
+						</div>
                         <div class="accordion-wrapper row">
 				            <iframe src="contactus_1.html" width="600px" height="400px">
 				              <p>Your browser does not support iframes, please update!</p>
@@ -182,17 +187,25 @@
 
 
 <!-- START FOOTER -->
-<div id="footer" >
-    <div class="container ">
-         <div  class="widget span6">
-             <h3>Quick Links</h3>
-                 <ul>
-                 	<li>
-                         <a href="#">Feedback</a> |
-                         <a href="#">Sales Enquiry</a> |
-                         <a href="#">Careers</a>
-                    </li>
-                 </ul>
+<div id="footer">
+    <div class="container">
+      <div class="row">
+         <div class="widget span6">
+             <h5>QUICK LINKS</h5>
+                <a href="#" class="contactus_font_footer">FEEDBACK</a>
+				<span class="contactus_font_footer">&nbsp;&nbsp;</span>
+                <a href="#" class="contactus_font_footer">ENQUIRY</a>
+				<span class="contactus_font_footer">&nbsp;&nbsp;</span>
+                <a href="#" class="contactus_font_footer">CAREERS</a>
+         </div>
+         
+         <div class="widget span6" align="right">
+          <h5>Stay Connected</h5>
+          <img id="s-Image_2" class="image trigger commentable"   alt="image" src="./img/0- linkedin.bmp" />
+          <img id="s-Image_3" class="image trigger commentable"   alt="image" src="./img/0- facebook.bmp" />
+          <img id="s-Image_4" class="image trigger commentable"   alt="image" src="./img/0- twitter.bmp" />
+         </div>
+         
          </div>
     </div>
 </div>
@@ -201,13 +214,10 @@
 <!-- START COPYRIGHT -->
 <div id="copyright">
     <div class="container">
-        <div class="row">
+    	
             <div class="center span12">
-                <p>Copyright © 2016 <a href="http://rvsoftware.com/" title=""><strong>R V Softwares Pvt. Ltd. </strong></a>All rights reserved.</p>
-            </div>
-        </div>
-        
-        
+                <p>Copyright © 2016 <a href="http://www.rvsoftware.com" class="contactus_font_footer">R V Softwares Pvt. Ltd. </a>All rights reserved.</p>
+        </div> 
     </div>
 </div> 
 </div> 
