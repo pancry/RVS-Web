@@ -1,0 +1,1 @@
+create table feedback (name VARCHAR(100), phone VARCHAR(20), mail VARCHAR(50), message VARCHAR(1000));
