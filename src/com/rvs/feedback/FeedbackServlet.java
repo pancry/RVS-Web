@@ -24,20 +24,20 @@ public class FeedbackServlet extends HttpServlet {
 		
 		
 		SessionFactory factory = DBUtil.getInstance().getFactory();
-				Session session = factory.openSession();
+		Session session = factory.openSession();
 
-				// creating transaction object
-				Transaction t = session.beginTransaction();
+		// creating transaction object
+		Transaction t = session.beginTransaction();
 
-				Feedback feedback = new Feedback();
-				feedback.setMessage(message);
-				feedback.setMail(mail);
-				feedback.setName(name);
-				feedback.setPhone(phone);
-				session.persist(feedback);
+		Feedback feedback = new Feedback();
+		feedback.setMessage(message);
+		feedback.setMail(mail);
+		feedback.setName(name);
+		feedback.setPhone(phone);
+		session.persist(feedback);
 
-				t.commit();// transaction is committed
-				session.close();
+		t.commit();// transaction is committed
+		session.close();
 
 				
 		String nextJSP = "/rvsoftwares/sendfeedback.html";

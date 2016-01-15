@@ -1,6 +1,7 @@
 package com.rvs.feedback;
 
 import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 public class DBUtil {
 	private SessionFactory factory;
@@ -14,6 +15,11 @@ public class DBUtil {
 		return dbUtil;
 	}
 	public SessionFactory getFactory() {
+		if(factory == null){
+			Configuration cfg = new Configuration();
+			cfg.configure("hibernate.cfg.xml");
+			factory  = cfg.buildSessionFactory();
+		}
 		return factory;
 	}
 

@@ -3,8 +3,8 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping package="com.base.login">
-<class name="Users" table="users">
+<hibernate-mapping package="com.rvs.feedback">
+	<class name="Feedback" table="feedback">
         <id name="id" column="id">
             <generator class="increment"/>
         </id>

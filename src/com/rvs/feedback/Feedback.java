@@ -1,10 +1,18 @@
 package com.rvs.feedback;
 
 public class Feedback {
+	private int id; 
 	private String phone;
 	private String mail;
 	private String name;
 	private String message;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getPhone() {
 		return phone;
 	}
